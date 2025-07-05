@@ -1,2 +1,5 @@
 solutions/
 .DS_Store
+secret.txt
+Miniconda3-latest-Linux-x86_64.sh
+environment.yml
