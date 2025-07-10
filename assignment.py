@@ -69,7 +69,11 @@ def count_repeats(string):
     >>> count_repeats("aeiou")
     0
     """
-    return sum (2 for char in set(string) if string.count(char) > 1)
+    from collections import Counter
+    counts = Counter(string)
+    return sum(count for count in counts.values() if count > 1)
+    
+    #return sum (2 for char in set(string) if string.count(char) > 1)
 
 
 if __name__ == "__main__":
